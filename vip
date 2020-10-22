@@ -60,7 +60,7 @@ AES_KEY=D0D0D0E0D0D0DFDFDF2C34323937D7AE
 SERIAL_NUMBER=$(ioreg -c IOPlatformExpertDevice -d 2 | awk -F\" '/IOPlatformSerialNumber/{print $(NF-1)}')
 verbose "SERIAL_NUMBER is ${SERIAL_NUMBER}"
 
-KEYCHAIN=/Users/${USER}/Library/Keychains/VIPAccess.keychain
+KEYCHAIN=/Users/${USER}/Library/Keychains/VIPAccess.keychain-db
 verbose "KEYCHAIN is ${KEYCHAIN}"
 
 KEYCHAIN_PASSWORD=${SERIAL_NUMBER}SymantecVIPAccess${USER}
