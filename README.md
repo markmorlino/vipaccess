@@ -18,3 +18,5 @@ This script is based on the the Expect script written by **p120ph37** found at h
         Command line replacement for the Symantec VIP Access GUI app.
         Echoes and copies to the copy/paste buffer the one time password
         that the Symantec VIP Access GUI app would provide.
+
+The first time you run this, you may have to unlock the keychain. The password will be for this will be displayed in verbose mode. You can always allow the access.
