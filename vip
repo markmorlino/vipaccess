@@ -64,6 +64,7 @@ KEYCHAIN=/Users/${USER}/Library/Keychains/VIPAccess.keychain-db
 verbose "KEYCHAIN is ${KEYCHAIN}"
 
 KEYCHAIN_PASSWORD=${SERIAL_NUMBER}SymantecVIPAccess${USER}
+verbose "KEYCHAIN_PASSWORD is ${KEYCHAIN_PASSWORD}"
 
 security unlock-keychain -p ${KEYCHAIN_PASSWORD} ${KEYCHAIN}
 
